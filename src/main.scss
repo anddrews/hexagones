@@ -9,6 +9,12 @@
   align-items: center;
   justify-content: center;
 
+  @media all and (max-width: 787px) {
+    .hexagone:nth-child(3n) {
+      margin: 0 110px 0 110px;
+    }
+  }
+
   @media all and (min-width: 788px) and (max-width: 1049px) {
     .hexagone:nth-child(4),
     .hexagone:nth-child(9){
