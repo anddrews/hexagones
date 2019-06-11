@@ -1,0 +1,31 @@
+@import "./partials/hexagone/hexagone";
+
+.hexagones {
+  margin: 100px auto;
+  width: 80%;
+  max-width: 840px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  @media all and (min-width: 788px) and (max-width: 1049px) {
+    .hexagone:nth-child(4),
+    .hexagone:nth-child(9){
+      margin-left: 110px;
+    }
+    .hexagone:nth-child(5),
+    .hexagone:nth-child(10) {
+      margin-right: 110px;
+    }
+  }
+
+  @media all and (min-width: 1050px) {
+    .hexagone:nth-child(5) {
+      margin-left: 110px;
+    }
+    .hexagone:nth-child(7) {
+      margin-right: 110px;
+    }
+  }
+}
